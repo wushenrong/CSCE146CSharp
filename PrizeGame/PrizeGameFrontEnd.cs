@@ -1,4 +1,4 @@
-﻿namespace PrizeGame;
+namespace PrizeGame;
 
 internal class Program {
   public static readonly PrizeGameManager GameManager = new();

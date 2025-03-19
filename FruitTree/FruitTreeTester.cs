@@ -1,4 +1,4 @@
-﻿namespace FruitTree;
+namespace FruitTree;
 
 internal class FruitTreeTester {
   public const string FRUIT_TYPE_TO_DELETE = Fruit.TYPE_APPLE;
@@ -63,4 +63,3 @@ internal class FruitTreeTester {
     PrintInOrder();
   }
 }
-

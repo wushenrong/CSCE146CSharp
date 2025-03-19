@@ -1,10 +1,11 @@
-﻿
+
 namespace VideoGameDatabase;
 
 public class VideoGame {
-  public const string DEFAULT_GAME_VALUE = "unknown";
   public const string DELIMITER = "\t";
   public const int NUMBER_OF_FIELDS = 2;
+
+  public const string DEFAULT_GAME_VALUE = "unknown";
 
   public string Name { get; set => field = value ?? DEFAULT_GAME_VALUE; }
   public string Console { get; set => field = value ?? DEFAULT_GAME_VALUE; }

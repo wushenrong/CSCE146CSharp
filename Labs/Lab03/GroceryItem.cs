@@ -1,14 +1,17 @@
 namespace Labs.Lab03;
 
 public class GroceryItem {
-  public string Name { get; set => field = value ?? "none"; }
+  public const string DEFAULT_NAME = "none";
+  public const double DEFAULT_VALUE = 0.0;
+
+  public string Name { get; set => field = value ?? DEFAULT_NAME; }
 
   public double Value {
     get;
-    set => field = value >= 0.0 ? value : 0.0;
+    set => field = value >= DEFAULT_VALUE ? value : DEFAULT_VALUE;
   }
 
-  public GroceryItem() : this("none", 0.0) { }
+  public GroceryItem() : this(DEFAULT_NAME, DEFAULT_VALUE) { }
 
   public GroceryItem(string name, double value) {
     Name = name;

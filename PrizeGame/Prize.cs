@@ -1,14 +1,19 @@
-﻿
+
 namespace PrizeGame;
 public class Prize {
-  public const string DEFAULT_NAME = "none";
   public const string DELIMITER = "\t";
   public const int NUMBER_OF_FIELDS = 2;
 
-  public string Name { get; set => field = value ?? DEFAULT_NAME; }
-  public double Price { get; set => field = value >= 0.0 ? value : 0.0; }
+  public const string DEFAULT_NAME = "none";
+  public const double DEFAULT_PRICE = 0.0;
 
-  public Prize() : this(DEFAULT_NAME, 0.0) { }
+  public string Name { get; set => field = value ?? DEFAULT_NAME; }
+  public double Price {
+    get;
+    set => field = value >= DEFAULT_PRICE ? value : DEFAULT_PRICE;
+  }
+
+  public Prize() : this(DEFAULT_NAME, DEFAULT_PRICE) { }
 
   public Prize(string name, double price) {
     Name = name;

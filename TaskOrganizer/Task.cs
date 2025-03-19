@@ -1,4 +1,4 @@
-﻿namespace TaskOrganizer;
+namespace TaskOrganizer;
 
 public class Task {
   public const string DELIMITER = "\t";
@@ -8,7 +8,10 @@ public class Task {
   public const int DEFAULT_PRIORITY = 4;
   public const string DEFAULT_ACTION = "none";
 
-  public int Priority { get; set => field = value >= 0 && value < NUMBER_OF_PRIORITIES ? value : DEFAULT_PRIORITY; }
+  public int Priority {
+    get;
+    set => field = value >= 0 && value < NUMBER_OF_PRIORITIES ? value : DEFAULT_PRIORITY;
+  }
   public string Action { get; set => field = value ?? DEFAULT_ACTION; }
 
   public Task() : this(DEFAULT_PRIORITY, DEFAULT_ACTION) { }

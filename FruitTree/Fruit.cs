@@ -1,18 +1,21 @@
-﻿namespace FruitTree;
+namespace FruitTree;
 
 public class Fruit : IComparable<Fruit> {
   public const int NUMBER_OF_FIELDS = 2;
   public const string DELIMITER = "\t";
+
   public const string TYPE_APPLE = "Apple";
   public const string TYPE_ORANGE = "Orange";
   public const string TYPE_BANANA = "Banana";
   public const string TYPE_KIWI = "Kiwi";
   public const string TYPE_TOMATO = "Tomato";
 
-  public string Type { get; set => field = IsTypeValid(value) ? value : TYPE_APPLE; }
-  public double Weight { get; set => field = value > 0.0 ? value : 1.0; }
+  public const double DEFAULT_VALUE = 1.0;
 
-  public Fruit() : this(TYPE_APPLE, 1.0) { }
+  public string Type { get; set => field = IsTypeValid(value) ? value : TYPE_APPLE; }
+  public double Weight { get; set => field = value > 0.0 ? value : DEFAULT_VALUE; }
+
+  public Fruit() : this(TYPE_APPLE, DEFAULT_VALUE) { }
 
   public Fruit(string type, double weight) {
     Type = type;
