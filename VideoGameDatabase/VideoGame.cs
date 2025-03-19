@@ -9,19 +9,14 @@ public class VideoGame {
   public string Name { get; set => field = value ?? DEFAULT_GAME_VALUE; }
   public string Console { get; set => field = value ?? DEFAULT_GAME_VALUE; }
 
-  public VideoGame() {
-    Name = DEFAULT_GAME_VALUE;
-    Console = DEFAULT_GAME_VALUE;
-  }
+  public VideoGame() : this(DEFAULT_GAME_VALUE, DEFAULT_GAME_VALUE) { }
 
   public VideoGame(string name, string console) {
     Name = name;
     Console = console;
   }
 
-  public override string? ToString() {
-    return $"{Name}{DELIMITER}{Console}";
-  }
+  public override string? ToString() => $"{Name}{DELIMITER}{Console}";
 
   public override bool Equals(object? obj) {
     return obj is VideoGame game &&
@@ -29,7 +24,5 @@ public class VideoGame {
            Console == game.Console;
   }
 
-  public override int GetHashCode() {
-    return HashCode.Combine(Name, Console);
-  }
+  public override int GetHashCode() => HashCode.Combine(Name, Console);
 }

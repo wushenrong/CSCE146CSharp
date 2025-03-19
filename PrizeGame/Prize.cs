@@ -8,19 +8,14 @@ public class Prize {
   public string Name { get; set => field = value ?? DEFAULT_NAME; }
   public double Price { get; set => field = value >= 0.0 ? value : 0.0; }
 
-  public Prize() {
-    Name = DEFAULT_NAME;
-    Price = 0.0;
-  }
+  public Prize() : this(DEFAULT_NAME, 0.0) { }
 
   public Prize(string name, double price) {
     Name = name;
     Price = price;
   }
 
-  public override string ToString() {
-    return $"Prize: {Name} Price: {Price}";
-  }
+  public override string ToString() => $"Prize: {Name} Price: {Price}";
 
   public override bool Equals(object obj) {
     return obj is Prize prize &&
@@ -28,7 +23,5 @@ public class Prize {
            Price == prize.Price;
   }
 
-  public override int GetHashCode() {
-    return HashCode.Combine(Name, Price);
-  }
+  public override int GetHashCode() => HashCode.Combine(Name, Price);
 }

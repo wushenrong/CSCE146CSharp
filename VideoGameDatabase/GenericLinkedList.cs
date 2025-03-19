@@ -34,13 +34,9 @@ public class GenericLinkedList<T> {
     }
   }
 
-  public bool HasNext() {
-    return _current is not null;
-  }
+  public bool HasNext() => _current is not null;
 
-  public T? GetCurrent() {
-    return _current == null ? default : _current.Data;
-  }
+  public T? GetCurrent() => _current == null ? default : _current.Data;
 
   public void SetCurrent(T data) {
     if (_current is not null) {

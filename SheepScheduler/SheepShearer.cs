@@ -41,7 +41,5 @@ public class SheepShearer {
     return null;
   }
 
-  public bool IsDone() {
-    return _currentSheep is null;
-  }
+  public bool IsDone() => _currentSheep is null;
 }

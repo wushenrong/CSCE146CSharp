@@ -36,9 +36,7 @@ public class GenericLinkedQueue<T> : IQueue<T> {
     return data;
   }
 
-  public T? Peek() {
-    return _head is null ? default : _head.Data;
-  }
+  public T? Peek() => _head is null ? default : _head.Data;
 
   public void Print() {
     for (Node? temp = _head; temp != null; temp = temp.Link) {

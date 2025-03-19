@@ -9,9 +9,7 @@ class ProcessScheduler {
     _currentProcess = null;
   }
 
-  public Process? GetCurrentProcess() {
-    return _currentProcess;
-  }
+  public Process? GetCurrentProcess() => _currentProcess;
 
   public void AddProcess(Process process) {
     if (_currentProcess is null) {
@@ -22,9 +20,7 @@ class ProcessScheduler {
     _processes.Enqueue(process);
   }
 
-  public void RunNextProcess() {
-    _currentProcess = _processes.Dequeue();
-  }
+  public void RunNextProcess() => _currentProcess = _processes.Dequeue();
 
   public void CancelCurrentProcess() {
     if (_currentProcess is not null) {
@@ -33,7 +29,5 @@ class ProcessScheduler {
     }
   }
 
-  public void PrintProcessQueue() {
-    _processes.Print();
-  }
+  public void PrintProcessQueue() => _processes.Print();
 }

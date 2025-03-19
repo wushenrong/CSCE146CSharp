@@ -47,9 +47,7 @@ public class MinHeap<T> where T : IComparable<T> {
     return ret;
   }
 
-  public T? Peek() {
-    return _heap is null ? default : _heap[0];
-  }
+  public T? Peek() => _heap is null ? default : _heap[0];
 
   public void Print() {
     if (_heap is null) {
@@ -99,15 +97,9 @@ public class MinHeap<T> where T : IComparable<T> {
     }
   }
 
-  private static int ParentIndex(int index) {
-    return (index - 1) / 2;
-  }
+  private static int ParentIndex(int index) => (index - 1) / 2;
 
-  private static int LeftIndex(int index) {
-    return index * 2 + 1;
-  }
+  private static int LeftIndex(int index) => index * 2 + 1;
 
-  private static int RightIndex(int index) {
-    return index * 2 + 2;
-  }
+  private static int RightIndex(int index) => index * 2 + 2;
 }

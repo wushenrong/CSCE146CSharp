@@ -1,4 +1,4 @@
-namespace FruitTree;
+﻿namespace FruitTree;
 
 public class Fruit : IComparable<Fruit> {
   public const int NUMBER_OF_FIELDS = 2;
@@ -12,10 +12,7 @@ public class Fruit : IComparable<Fruit> {
   public string Type { get; set => field = IsTypeValid(value) ? value : TYPE_APPLE; }
   public double Weight { get; set => field = value > 0.0 ? value : 1.0; }
 
-  public Fruit() {
-    Type = TYPE_APPLE;
-    Weight = 1.0;
-  }
+  public Fruit() : this(TYPE_APPLE, 1.0) { }
 
   public Fruit(string type, double weight) {
     Type = type;
@@ -46,7 +43,5 @@ public class Fruit : IComparable<Fruit> {
            Weight == fruit.Weight;
   }
 
-  public override int GetHashCode() {
-    return HashCode.Combine(Type, Weight);
-  }
+  public override int GetHashCode() => HashCode.Combine(Type, Weight);
 }

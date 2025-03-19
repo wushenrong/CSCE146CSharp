@@ -9,13 +9,7 @@ public class Order : IComparable<Order> {
   public int ArrivalTime { get; set => field = value >= 0 ? value : 0; }
   public int CookingTimeLeft { get; set => field = value >= 1 ? value : 1; }
 
-  public Order() {
-    Customer = DEFAULT_VALUE;
-    FoodOrder = DEFAULT_VALUE;
-    CookingTime = 1;
-    ArrivalTime = 0;
-    CookingTimeLeft = 1;
-  }
+  public Order() : this(DEFAULT_VALUE, DEFAULT_VALUE, 1, 0) { }
 
   public Order(string customer, string foodOrder, int cookingTime, int arrivalTime) {
     Customer = customer;
@@ -25,19 +19,17 @@ public class Order : IComparable<Order> {
     CookingTimeLeft = cookingTime;
   }
 
-  public void CookForOneMinute() {
-    CookingTimeLeft--;
-  }
+  public void CookForOneMinute() => CookingTimeLeft--;
 
-  public bool IsDone() {
-    return CookingTimeLeft == 0;
-  }
+  public bool IsDone() => CookingTimeLeft == 0;
 
   public override string? ToString() {
     return $"Customer: {Customer}, Order: {FoodOrder}, Cooking Time Left: {CookingTimeLeft}";
   }
 
   public int CompareTo(Order? other) {
-    return other is null || CookingTime < other.CookingTime ? -1 : CookingTime > other.CookingTime ? 1 : 0;
+    return other is null
+      || CookingTime < other.CookingTime ? -1
+      : CookingTime > other.CookingTime ? 1 : 0;
   }
 }

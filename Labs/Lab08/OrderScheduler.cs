@@ -15,9 +15,7 @@ public class OrderScheduler {
     _totalWaitingTime = 0;
   }
 
-  public Order? GetCurrentOrder() {
-    return _currentOrder;
-  }
+  public Order? GetCurrentOrder() => _currentOrder;
 
   public void AddOrder(Order data) {
     _totalOrders++;
@@ -42,9 +40,7 @@ public class OrderScheduler {
     }
   }
 
-  public bool IsDone() {
-    return _currentOrder is null;
-  }
+  public bool IsDone() => _currentOrder is null;
 
   public double GetAverageWaitingTime() {
     return (double)_totalWaitingTime / _totalOrders;

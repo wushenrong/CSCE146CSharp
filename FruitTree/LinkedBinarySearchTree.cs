@@ -3,9 +3,7 @@
 public class LinkedBinarySearchTree<T> where T : IComparable<T> {
   private Node? _root;
 
-  public void Add(T data) {
-    _root = Add(_root, data);
-  }
+  public void Add(T data) => _root = Add(_root, data);
 
   private static Node Add(Node? node, T data) {
     if (node is null) {
@@ -19,9 +17,7 @@ public class LinkedBinarySearchTree<T> where T : IComparable<T> {
     return node;
   }
 
-  public void Remove(T data) {
-    _root = Remove(_root, data);
-  }
+  public void Remove(T data) => _root = Remove(_root, data);
 
   private static Node? Remove(Node? node, T data) {
     if (node is null) {
@@ -57,9 +53,7 @@ public class LinkedBinarySearchTree<T> where T : IComparable<T> {
     return node is null ? null : node.LeftChild is null ? node : FindMinNode(node.LeftChild);
   }
 
-  public bool Search(T data) {
-    return data is not null && Search(_root, data);
-  }
+  public bool Search(T data) => Search(_root, data);
 
   private static bool Search(Node? node, T data) {
     return node is not null && (data.CompareTo(node.Data) > 0
@@ -67,9 +61,7 @@ public class LinkedBinarySearchTree<T> where T : IComparable<T> {
       : data.CompareTo(node.Data) >= 0 || Search(node.LeftChild, data));
   }
 
-  public void PrintPreOrder() {
-    PrintPreOrder(_root);
-  }
+  public void PrintPreOrder() => PrintPreOrder(_root);
 
   private static void PrintPreOrder(Node? node) {
     if (node is null) {
@@ -95,9 +87,7 @@ public class LinkedBinarySearchTree<T> where T : IComparable<T> {
     PrintInOrder(node.RightChild);
   }
 
-  public void PrintPostOrder() {
-    PrintPostOrder(_root);
-  }
+  public void PrintPostOrder() => PrintPostOrder(_root);
 
   private static void PrintPostOrder(Node? node) {
     if (node is null) {

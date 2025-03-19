@@ -10,11 +10,7 @@ public class Sheep : IComparable<Sheep> {
   public int ShearingTime { get; set => field = value >= 1 ? value : 1; }
   public int ArrivalTime { get; set => field = value >= 0 ? value : 0; }
 
-  public Sheep() {
-    Name = DEFAULT_NAME;
-    ShearingTime = 1;
-    ArrivalTime = 0;
-  }
+  public Sheep() : this(DEFAULT_NAME, 1, 0) { }
 
   public Sheep(string name, int shearingTime, int arrivalTime) {
     Name = name;

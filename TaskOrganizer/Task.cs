@@ -6,23 +6,19 @@ public class Task {
 
   public const int NUMBER_OF_PRIORITIES = 5;
   public const int DEFAULT_PRIORITY = 4;
+  public const string DEFAULT_ACTION = "none";
 
   public int Priority { get; set => field = value >= 0 && value < NUMBER_OF_PRIORITIES ? value : DEFAULT_PRIORITY; }
-  public string Action { get; set => field = value ?? "none"; }
+  public string Action { get; set => field = value ?? DEFAULT_ACTION; }
 
-  public Task() {
-    Priority = DEFAULT_PRIORITY;
-    Action = "none";
-  }
+  public Task() : this(DEFAULT_PRIORITY, DEFAULT_ACTION) { }
 
   public Task(int priority, string action) {
     Priority = priority;
     Action = action;
   }
 
-  public override string ToString() {
-    return $"{Priority}{DELIMITER}{Action}";
-  }
+  public override string ToString() => $"{Priority}{DELIMITER}{Action}";
 
   public override bool Equals(object obj) {
     return obj is Task task &&
@@ -30,7 +26,5 @@ public class Task {
            Action == task.Action;
   }
 
-  public override int GetHashCode() {
-    return HashCode.Combine(Priority, Action);
-  }
+  public override int GetHashCode() => HashCode.Combine(Priority, Action);
 }
