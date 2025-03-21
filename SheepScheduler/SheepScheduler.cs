@@ -1,6 +1,12 @@
-﻿using RobotSimulator;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
 namespace SheepScheduler;
+
+using RobotSimulator;
 
 internal class SheepScheduler {
   private static GenericLinkedQueue<Sheep>? s_sheepToBeSorted;

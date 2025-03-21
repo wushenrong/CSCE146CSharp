@@ -1,4 +1,10 @@
-﻿namespace Labs.Lab08;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace Labs.Lab08;
 
 public class OrderScheduler {
   private readonly MinHeap<Order> _orders;

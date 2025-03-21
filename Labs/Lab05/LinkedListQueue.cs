@@ -1,4 +1,10 @@
-﻿namespace Labs.Lab05;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace Labs.Lab05;
 
 public class LinkedListQueue<T> : IQueue<T> {
   private Node? _head;

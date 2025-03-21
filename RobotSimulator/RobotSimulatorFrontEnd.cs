@@ -1,4 +1,10 @@
-﻿namespace RobotSimulator;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace RobotSimulator;
 
 internal class RobotSimulatorFrontEnd {
   private static RobotSimulator? s_simulator;

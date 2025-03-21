@@ -1,4 +1,11 @@
-﻿namespace StringSorter;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace StringSorter;
+
 class StringLinkedQueue {
   private StringNode _head;
   private StringNode _tail;

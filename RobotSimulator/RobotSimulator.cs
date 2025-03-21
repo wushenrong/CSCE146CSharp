@@ -1,6 +1,12 @@
-﻿using Labs.Lab05;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
 namespace RobotSimulator;
+
+using Labs.Lab05;
 
 public class RobotSimulator {
   public const int BOARD_SIZE = 10;

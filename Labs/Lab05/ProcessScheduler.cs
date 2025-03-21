@@ -1,6 +1,12 @@
-﻿namespace Labs.Lab05;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
-class ProcessScheduler {
+namespace Labs.Lab05;
+
+public class ProcessScheduler {
   private readonly IQueue<Process> _processes;
   private Process? _currentProcess;
 

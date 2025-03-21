@@ -1,6 +1,12 @@
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 namespace Labs.Lab05;
 
-class Process {
+public class Process {
   public const string DEFAULT_NAME = "none";
   public const double DEFAULT_COMPLETION_TIME = 0.0;
 

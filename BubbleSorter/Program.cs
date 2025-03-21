@@ -1,4 +1,10 @@
-﻿const int array_size = 10;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+const int array_size = 10;
 
 int[] numbers = new int[array_size];
 

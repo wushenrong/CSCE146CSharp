@@ -1,4 +1,10 @@
-﻿namespace FruitTree;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace FruitTree;
 
 public class LinkedBinarySearchTree<T> where T : IComparable<T> {
   private Node? _root;

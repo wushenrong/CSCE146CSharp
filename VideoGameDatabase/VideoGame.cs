@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
 namespace VideoGameDatabase;
 

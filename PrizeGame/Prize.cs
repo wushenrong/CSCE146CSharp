@@ -1,5 +1,11 @@
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
 namespace PrizeGame;
+
 public class Prize {
   public const string DELIMITER = "\t";
   public const int NUMBER_OF_FIELDS = 2;

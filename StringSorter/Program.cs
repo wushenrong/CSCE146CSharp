@@ -1,4 +1,10 @@
-﻿namespace StringSorter;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace StringSorter;
 
 internal class Program {
   public const string SORT_STRING = "sort";

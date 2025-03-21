@@ -1,4 +1,10 @@
-﻿namespace Labs.Lab03;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace Labs.Lab03;
 
 public class GroceryList {
   private ListNode? _head;

@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2025 Samuel Wu
+#
+# SPDX-License-Identifier: MIT-0
+
+version = 2
+
+[[annotations]]
+SPDX-FileCopyrightText = "2025 Samuel Wu"
+SPDX-License-Identifier = "MIT-0"
+path = [
+    "**/*.Designer.cs",
+    "**/*.csproj",
+    "**/*.resx",
+    "CSCE146CSharp.sln",
+    "README.md",
+]

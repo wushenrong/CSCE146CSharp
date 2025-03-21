@@ -1,4 +1,10 @@
-﻿namespace PrizeGame;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace PrizeGame;
 
 public class PrizeGameManager {
   public const int DEFAULT_PRIZE_SIZE = 20;

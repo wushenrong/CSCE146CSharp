@@ -1,4 +1,10 @@
-﻿namespace Labs;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace Labs;
 
 public class FileIOSolutions {
   public static void PastTense(string inputFileName, string outputFileName) {

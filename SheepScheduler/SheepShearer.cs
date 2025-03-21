@@ -1,4 +1,10 @@
-﻿namespace SheepScheduler;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace SheepScheduler;
 
 using Labs.Lab08;
 

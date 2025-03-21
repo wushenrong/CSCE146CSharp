@@ -1,6 +1,10 @@
-﻿namespace TaskOrganizer;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
 
-using System;
+namespace TaskOrganizer;
 
 using VideoGameDatabase;
 

@@ -1,3 +1,9 @@
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 namespace PrizeGame;
 
 internal class Program {

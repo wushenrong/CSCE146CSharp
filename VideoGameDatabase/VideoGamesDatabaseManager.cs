@@ -1,4 +1,10 @@
-﻿namespace VideoGameDatabase;
+/*
+ * SPDX-FileCopyrightText: 2025 Samuel Wu
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+namespace VideoGameDatabase;
 
 internal class VideoGamesDatabaseManager {
   public static readonly VideoGamesDatabase Database = new();
