@@ -1,4 +1,4 @@
-﻿namespace Fractal;
+namespace Fractal;
 
 partial class Fractal {
   /// <summary>
@@ -26,17 +26,17 @@ partial class Fractal {
   private void InitializeComponent() {
     sierpinskiTriangle1 = new SierpinskiTriangle();
     SuspendLayout();
-    // 
+    //
     // sierpinskiTriangle1
-    // 
+    //
     sierpinskiTriangle1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
     sierpinskiTriangle1.Location = new Point(0, 0);
     sierpinskiTriangle1.Name = "sierpinskiTriangle1";
     sierpinskiTriangle1.Size = new Size(400, 400);
     sierpinskiTriangle1.TabIndex = 0;
-    // 
+    //
     // Fractal
-    // 
+    //
     AutoScaleDimensions = new SizeF(7F, 15F);
     AutoScaleMode = AutoScaleMode.Font;
     ClientSize = new Size(400, 400);
