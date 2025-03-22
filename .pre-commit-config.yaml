@@ -23,16 +23,19 @@ repos:
           - --fix
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.24.2
+    rev: v8.24.0
     hooks:
       - id: gitleaks
 
-  - repo: https://github.com/dotnet/format
-    rev: v8.0.453106
+  - repo: local
     hooks:
       - id: dotnet-format
-        args:
-          - --no-restore
+        name: dotnet-format
+        language: system
+        entry: dotnet format --no-restore --include
+        types_or:
+          - c#
+          - vb
 
   - repo: meta
     hooks:
