@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   main:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -22,7 +22,7 @@ jobs:
           python-version: 3.13
       - uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 8.0.1xx
+          dotnet-version: 8
 
       - uses: pre-commit/action@v3.0.1
       - uses: pre-commit-ci/lite-action@v1.1.0
